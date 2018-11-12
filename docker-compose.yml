@@ -1,0 +1,77 @@
+# Creat by Abraão Silva
+# Date 12 Nov 2018 
+version: '2'
+services:
+  docker-jenkins-tools: # JENKINS LATEST
+    image: jenkins:latest
+    container_name: jenkins-stack-tools
+    restart: always
+    ports:
+      - 1000:8080
+    volumes:
+      - ./jenkins-stack-tools:/var/jenkins_home
+      - /usr/bin/zip:/usr/bin/zip
+      - /usr/bin/unzip:/usr/bin/unzip
+      - /usr/bin/mvn:/usr/bin/mvn
+    environment:
+      TZ: America/Sao_Paulo
+
+  postgresql: # BANCO DE DADOS POSTGRESQL
+    image: orchardup/postgresql:latest
+    environment:
+      - POSTGRESQL_USER=sonar
+      - POSTGRESQL_PASS=sonar
+      - POSTGRESQL_DB=sonar
+    volumes:
+      - ./sonarqube/postgresql:/var/lib/postgresql
+
+  sonarqube: # SONARQUBE 6.5
+    image: sonarqube:6.5
+    environment:
+      - SONARQUBE_JDBC_USERNAME=sonar
+      - SONARQUBE_JDBC_PASSWORD=sonar
+      - SONARQUBE_JDBC_URL=jdbc:postgresql://postgresql/sonar
+    ports:
+      - "2000:9000"
+      - "9092:9092"
+
+  elasticsearch: # ELK STACK
+    image: elasticsearch:5.6.7
+    hostname: elasticsearch
+    restart: always
+    ports:
+      - 9200:9200/tcp
+    mem_limit: 8000M
+    volumes:
+      - ./elasticsearch/volumes/config:/usr/share/elasticsearch/config
+      - ./elasticsearch/volumes/data:/usr/share/elasticsearch/data
+    environment:
+      TZ: America/Sao_Paulo
+
+  logstash:
+    image: logstash:5.6.7
+    hostname: logstash
+    restart: always
+    ports:
+      - 9300:5044/tcp
+    mem_limit: 4000M
+    command: -f /etc/logstash/conf.d/logstash.conf
+    links:
+      - elasticsearch
+    volumes:
+      - ./logstash/volumes/config:/etc/logstash/conf.d
+    environment:
+      TZ: America/Sao_Paulo
+          
+  kibana:
+    image: kibana:5.6.7 
+    hostname: kibana
+    restart: always
+    ports:
+      - 5601:5601/tcp
+    mem_limit: 4000M
+    links:
+      - elasticsearch
+    environment:
+      - "ELASTICSEARCH_URL=http://elasticsearch:9200"
+      - "TZ: America/Sao_Paulo"
