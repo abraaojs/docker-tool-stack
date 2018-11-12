@@ -10,7 +10,7 @@
 echo "Startup Docker Compose"
 docker-compose up -d
 
-# Warning
+### Warning ###
 # if the Jenkins of the following permission error
 # - /var/jenkins_home/copy_reference_file.log’: Permission denied 
 # - Execute: chown -R 1000:1000 /jenkins-stack-tools
