@@ -8,6 +8,9 @@
 # - Git v2.x
 
 echo "Startup Docker Compose"
+
+docker-compose -f nexus3-compose.yml
+
 docker-compose up -d
 
 ### Warning ###

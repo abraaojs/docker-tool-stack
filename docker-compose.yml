@@ -9,10 +9,10 @@ services:
     ports:
       - 1000:8080
     volumes:
-      - ./jenkins-stack-tools:/var/jenkins_home
-      - /usr/bin/zip:/usr/bin/zip
-      - /usr/bin/unzip:/usr/bin/unzip
-      - /usr/bin/mvn:/usr/bin/mvn
+      - "$PWD/jenkins-master:/var/jenkins_home"
+#      - /usr/bin/zip:/usr/bin/zip
+#      - /usr/bin/unzip:/usr/bin/unzip
+#      - /usr/bin/mvn:/usr/bin/mvn
     environment:
       TZ: America/Sao_Paulo
 
@@ -23,15 +23,20 @@ services:
       - POSTGRESQL_PASS=sonar
       - POSTGRESQL_DB=sonar
     volumes:
-      - ./sonarqube/postgresql:/var/lib/postgresql
+      - "$PWD/sonarqube/postgresql:/var/lib/postgresql"
 
   sonarqube: # SONARQUBE 6.5
     image: sonarqube:6.5
+    restart: always  
     environment:
       - SONARQUBE_JDBC_USERNAME=sonar
       - SONARQUBE_JDBC_PASSWORD=sonar
       - SONARQUBE_JDBC_URL=jdbc:postgresql://postgresql/sonar
-    restart: always  
+    volumes:
+      - "$PWD/sonarqube-conf:/opt/sonarqube/conf"
+      - "$PWD/sonarqube-data:/opt/sonarqube/data"
+      - "$PWD/sonarqube-extensions:/opt/sonarqube/extensions"
+      - "$PWD/sonarqube-bundled-plugins:/opt/sonarqube/lib/bundled-plugins"
     ports:
       - "2000:9000"
       - "9092:9092"
@@ -41,12 +46,13 @@ services:
     hostname: elasticsearch
     restart: always
     ports:
-      - 9200:9200/tcp
-    mem_limit: 8000M
+       - "9200:9200"
+       - "9300:9300"
     volumes:
-      - ./elasticsearch/volumes/config:/usr/share/elasticsearch/config
-      - ./elasticsearch/volumes/data:/usr/share/elasticsearch/data
+      - "$PWD/elasticsearch/volumes/config:/usr/share/elasticsearch/config"
+      - "$PWD/elasticsearch/volumes/data:/usr/share/elasticsearch/data"
     environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
       TZ: America/Sao_Paulo
 
   logstash:
@@ -54,23 +60,22 @@ services:
     hostname: logstash
     restart: always
     ports:
-      - 9300:5044/tcp
-    mem_limit: 4000M
+      - "9400:5044"
     command: -f /etc/logstash/conf.d/logstash.conf
     links:
       - elasticsearch
     volumes:
-      - ./logstash/volumes/config:/etc/logstash/conf.d
+      - "$PWD/logstash/volumes/config:/etc/logstash/conf.d"
     environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
       TZ: America/Sao_Paulo
-          
+            
   kibana:
     image: kibana:5.6.7 
     hostname: kibana
     restart: always
     ports:
-      - 5601:5601/tcp
-    mem_limit: 4000M
+      - "5601:5601"
     links:
       - elasticsearch
     environment:
