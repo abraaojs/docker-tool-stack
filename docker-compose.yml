@@ -1,13 +1,14 @@
 # Creat by Abraão Silva
 # Date 12 Nov 2018 
-version: '2'
+version: '3'
 services:
   docker-jenkins-tools: # JENKINS LATEST
     image: jenkins:latest
-    container_name: jenkins-stack-tools
+    container_name: jenkins
     restart: always
     ports:
-      - 1000:8080
+      - 2000:8080
+      - 50000:50000 
     volumes:
       - "$PWD/jenkins-master:/var/jenkins_home"
 #      - /usr/bin/zip:/usr/bin/zip
@@ -20,64 +21,21 @@ services:
     image: orchardup/postgresql:latest
     environment:
       - POSTGRESQL_USER=sonar
-      - POSTGRESQL_PASS=sonar
+      - POSTGRESQL_PASS=xaexohquaetiesoo
       - POSTGRESQL_DB=sonar
     volumes:
-      - "$PWD/sonarqube/postgresql:/var/lib/postgresql"
+      - "$PWD/postgresql:/var/lib/postgresql"
 
-  sonarqube: # SONARQUBE 6.5
-    image: sonarqube:6.5
+  sonarqube: # SONARQUBE
+    image: sonarqube:6.7
     restart: always  
     environment:
       - SONARQUBE_JDBC_USERNAME=sonar
-      - SONARQUBE_JDBC_PASSWORD=sonar
+      - SONARQUBE_JDBC_PASSWORD=xaexohquaetiesoo
       - SONARQUBE_JDBC_URL=jdbc:postgresql://postgresql/sonar
     volumes:
-      - "$PWD/sonarqube-conf:/opt/sonarqube/conf"
-      - "$PWD/sonarqube-data:/opt/sonarqube/data"
-      - "$PWD/sonarqube-extensions:/opt/sonarqube/extensions"
-      - "$PWD/sonarqube-bundled-plugins:/opt/sonarqube/lib/bundled-plugins"
+      - "$PWD/sonarqube/sonarqube-conf:/opt/sonarqube/conf"
+      - "$PWD/sonarqube/sonarqube-data:/opt/sonarqube/data"
+      - "$PWD/sonarqube/sonarqube-extensions:/opt/sonarqube/extensions"
     ports:
-      - "2000:9000"
-      - "9092:9092"
-
-  elasticsearch: # ELK STACK
-    image: elasticsearch:5.6.7
-    hostname: elasticsearch
-    restart: always
-    ports:
-       - "9200:9200"
-       - "9300:9300"
-    volumes:
-      - "$PWD/elasticsearch/volumes/config:/usr/share/elasticsearch/config"
-      - "$PWD/elasticsearch/volumes/data:/usr/share/elasticsearch/data"
-    environment:
-      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
-      TZ: America/Sao_Paulo
-
-  logstash:
-    image: logstash:5.6.7
-    hostname: logstash
-    restart: always
-    ports:
-      - "9400:5044"
-    command: -f /etc/logstash/conf.d/logstash.conf
-    links:
-      - elasticsearch
-    volumes:
-      - "$PWD/logstash/volumes/config:/etc/logstash/conf.d"
-    environment:
-      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
-      TZ: America/Sao_Paulo
-            
-  kibana:
-    image: kibana:5.6.7 
-    hostname: kibana
-    restart: always
-    ports:
-      - "5601:5601"
-    links:
-      - elasticsearch
-    environment:
-      - "ELASTICSEARCH_URL=http://elasticsearch:9200"
-      - "TZ: America/Sao_Paulo"
+      - "3000:9000"
