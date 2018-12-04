@@ -63,3 +63,14 @@
 04-Dec-2018 18:27:16.897 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
 04-Dec-2018 18:27:16.953 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml]
 04-Dec-2018 18:28:55.503 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [98,615] ms
+04-Dec-2018 19:12:59.980 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+04-Dec-2018 19:13:00.325 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Dec-2018 19:13:00.397 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8040"]
+04-Dec-2018 19:13:00.420 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Dec-2018 19:13:00.576 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8019"]
+04-Dec-2018 19:13:00.596 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Dec-2018 19:13:00.642 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Dec-2018 19:13:00.705 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+04-Dec-2018 19:13:00.937 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+04-Dec-2018 19:13:00.966 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+04-Dec-2018 19:14:18.630 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [77,690] ms

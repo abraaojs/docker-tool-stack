@@ -981,3 +981,17 @@
 2018-12-04 18:28:50,955 [art-init] [WARN ] (o.a.f.l.ArtifactoryLockFile:65) - Found existing lock file. Artifactory was not shutdown properly. [/opt/jfrog/artifactory/data/.lock]
 2018-12-04 18:28:59,188 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:495) - Artifactory application context set to NOT READY by refresh
 2018-12-04 18:28:59,264 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:236) - Refreshing artifactory: startup date [Tue Dec 04 18:28:59 UTC 2018]; root of context hierarchy
+2018-12-04 19:14:16,373 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:265) - 
+                _   _  __           _                      ____   _____ _____
+     /\        | | (_)/ _|         | |                    / __ \ / ____/ ____|
+    /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _  | |  | | (___| (___
+   / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | | | |  | |\___ \\___ \
+  / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| | | |__| |____) |___) |
+ /_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |  \____/|_____/_____/
+ Version:  6.5.9                                   __/ |
+ Revision: 60509900                               |___/
+ Artifactory Home: '/opt/jfrog/artifactory'
+
+2018-12-04 19:14:16,487 [art-init] [WARN ] (o.a.f.l.ArtifactoryLockFile:65) - Found existing lock file. Artifactory was not shutdown properly. [/opt/jfrog/artifactory/data/.lock]
+2018-12-04 19:14:21,529 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:495) - Artifactory application context set to NOT READY by refresh
+2018-12-04 19:14:21,582 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:236) - Refreshing artifactory: startup date [Tue Dec 04 19:14:21 UTC 2018]; root of context hierarchy

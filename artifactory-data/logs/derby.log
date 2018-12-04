@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Tue Dec 04 18:28:12 UTC 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0167-7a7a-3b2d-00001de8a9e8 
+Tue Dec 04 19:13:37 UTC 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0167-7aa3-d4df-00001cf39468 
 on database directory /var/opt/jfrog/artifactory/data/derby with class loader java.net.URLClassLoader@e9e54c2 
 Loaded from file:/opt/jfrog/artifactory/tomcat/lib/derby-10.11.1.1.jar
 java.vendor=Oracle Corporation
