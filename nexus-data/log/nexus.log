@@ -1733,3 +1733,7 @@ Started Sonatype Nexus OSS 3.14.0-04
 2018-12-04 19:18:45,171+0000 INFO  [FelixStartLevel]  *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-ldap-plugin [245]
 2018-12-04 19:18:46,459+0000 INFO  [FelixStartLevel]  *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-ldap-plugin [245]
 2018-12-04 19:18:46,465+0000 INFO  [FelixStartLevel]  *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-licensing-plugin [246]
+2018-12-04 19:18:48,293+0000 INFO  [FelixStartLevel]  *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-licensing-plugin [246]
+2018-12-04 19:18:48,354+0000 INFO  [FelixStartLevel]  *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-nuget [254]
+2018-12-04 19:18:55,858+0000 INFO  [FelixStartLevel]  *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-nuget [254]
+2018-12-04 19:18:56,118+0000 INFO  [FelixStartLevel]  *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-rubygems [255]

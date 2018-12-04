@@ -12,15 +12,15 @@ Repository for running docker-compose with Jenkins, Nexus3, Jfrog Artifactory-os
 
 ## How To
 
-### Step 1 (Up Nexus 3)
+#### Step 1 (Up Nexus 3)
 
 $ docker-compose -f nexus3-compose.yml up -d
 
-### Step 2 (Up Jfrog Artifactory)
+#### Step 2 (Up Jfrog Artifactory)
 
 $ docker-compose -f artifactory-oss.yml up -d
 
-### Step 3 (Jenkins and Sonarqube)
+#### Step 3 (Up Jenkins and Sonarqube)
 
 $ docker-compose up -d
 
@@ -33,13 +33,13 @@ Execute: chown -R 1000:1000 jenkins-stack-tools/
 
 ## Quick Start Stack ELK
 
-### On application host go to `beats` directory and start Filebeat with Docker Compose:
+- On application host go to `beats` directory and start Filebeat with Docker Compose:
 ````
 $ cd beats
 $ docker-compose up -d
 ````
 
-### On the ELK host go to `elk` directory and start ELK stack with Docker compose:
+- On the ELK host go to `elk` directory and start ELK stack with Docker compose:
 ```
 $ cd elk
 $ docker-compose up -d
