@@ -94,4 +94,56 @@ sun.java.launcher=SUN_STANDARD
 <dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.812'/>
 <dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.812'/>
 <dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.812'/>
-<dependency_failed type='leaf_t
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList' witness='com/sun/istack/internal/FinalArrayList' stamp='60.822'/>
+<dependency_failed type='leaf_type' ctxk='com/sun/org/apache/xerces/internal/util/NamespaceSupport' witness='com/sun/org/apache/xerces/internal/impl/xs/SchemaNamespaceSupport' stamp='64.204'/>
+<dependency_failed type='leaf_type' ctxk='com/sun/org/apache/xerces/internal/xni/QName' witness='com/sun/org/apache/xerces/internal/impl/dv/xs/QNameDV$XQName' stamp='64.228'/>
+<dependency_failed type='leaf_type' ctxk='java/util/ArrayList$Itr' witness='java/util/ArrayList$ListItr' stamp='64.725'/>
+<writer thread='139732296775424'/>
+<dependency_failed type='leaf_type' ctxk='java/util/concurrent/ThreadPoolExecutor' witness='java/util/concurrent/ScheduledThreadPoolExecutor' stamp='71.848'/>
+<dependency_failed type='unique_concrete_method' ctxk='org/osgi/resource/Capability' x='org/apache/felix/framework/wiring/BundleCapabilityImpl getResource ()Lorg/osgi/resource/Resource;' witness='org/osgi/resource/Capability' stamp='72.050'/>
+<dependency_failed type='unique_concrete_method' ctxk='org/osgi/resource/Capability' x='org/apache/felix/framework/wiring/BundleCapabilityImpl getResource ()Lorg/osgi/resource/Resource;' witness='org/osgi/resource/Capability' stamp='72.050'/>
+<dependency_failed type='unique_concrete_method' ctxk='org/osgi/resource/Capability' x='java/lang/Object equals (Ljava/lang/Object;)Z' witness='org/osgi/resource/Capability' stamp='72.050'/>
+<writer thread='139732402861824'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap remove (Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' witness='org/eclipse/jetty/http/PathMap' stamp='83.356'/>
+<writer thread='139732293617408'/>
+<dependency_failed type='leaf_type' ctxk='java/util/StringTokenizer' witness='org/eclipse/jetty/util/QuotedStringTokenizer' stamp='84.470'/>
+<dependency_failed type='leaf_type' ctxk='java/util/StringTokenizer' witness='org/eclipse/jetty/util/QuotedStringTokenizer' stamp='84.470'/>
+<dependency_failed type='leaf_type' ctxk='java/util/StringTokenizer' witness='org/eclipse/jetty/util/QuotedStringTokenizer' stamp='84.470'/>
+<dependency_failed type='leaf_type' ctxk='java/util/StringTokenizer' witness='org/eclipse/jetty/util/QuotedStringTokenizer' stamp='84.470'/>
+<dependency_failed type='leaf_type' ctxk='java/util/StringTokenizer' witness='org/eclipse/jetty/util/QuotedStringTokenizer' stamp='84.470'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/nio/HeapByteBuffer' x='java/nio/HeapByteBuffer _get (I)B' witness='java/nio/HeapByteBufferR' stamp='84.498'/>
+<dependency_failed type='leaf_type' ctxk='java/nio/HeapByteBuffer' witness='java/nio/HeapByteBufferR' stamp='84.498'/>
+<dependency_failed type='leaf_type' ctxk='java/nio/HeapByteBuffer' witness='java/nio/HeapByteBufferR' stamp='84.498'/>
+<dependency_failed type='leaf_type' ctxk='java/nio/HeapByteBuffer' witness='java/nio/HeapByteBufferR' stamp='84.498'/>
+<dependency_failed type='leaf_type' ctxk='java/nio/HeapByteBuffer' witness='java/nio/HeapByteBufferR' stamp='84.498'/>
+<dependency_failed type='leaf_type' ctxk='java/nio/HeapByteBuffer' witness='java/nio/HeapByteBufferR' stamp='84.498'/>
+<dependency_failed type='leaf_type' ctxk='com/sun/org/apache/xerces/internal/dom/DocumentTypeImpl' witness='com/sun/org/apache/xerces/internal/dom/DeferredDocumentTypeImpl' stamp='85.488'/>
+<dependency_failed type='leaf_type' ctxk='com/sun/org/apache/xerces/internal/dom/DocumentTypeImpl' witness='com/sun/org/apache/xerces/internal/dom/DeferredDocumentTypeImpl' stamp='85.488'/>
+<dependency_failed type='leaf_type' ctxk='java/util/concurrent/atomic/AtomicReference' witness='org/eclipse/sisu/inject/RankedSequence' stamp='128.392'/>
+<dependency_failed type='leaf_type' ctxk='java/util/concurrent/atomic/AtomicReference' witness='org/eclipse/sisu/inject/RankedSequence' stamp='128.392'/>
+<dependency_failed type='leaf_type' ctxk='java/util/concurrent/atomic/AtomicReference' witness='org/eclipse/sisu/inject/RankedSequence' stamp='128.392'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap containsKey (Ljava/lang/Object;)Z' witness='org/apache/commons/beanutils/WeakFastHashMap' stamp='130.795'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap containsKey (Ljava/lang/Object;)Z' witness='org/apache/commons/beanutils/WeakFastHashMap' stamp='130.795'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap containsKey (Ljava/lang/Object;)Z' witness='org/apache/commons/beanutils/WeakFastHashMap' stamp='130.795'/>
+<dependency_failed type='unique_concrete_method' ctxk='java/util/HashMap' x='java/util/HashMap size ()I' witness='org/apache/commons/beanutils/WeakFastHashMap' stamp='130.795'/>
+<dependen

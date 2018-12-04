@@ -979,3 +979,5 @@
  Artifactory Home: '/opt/jfrog/artifactory'
 
 2018-12-04 18:28:50,955 [art-init] [WARN ] (o.a.f.l.ArtifactoryLockFile:65) - Found existing lock file. Artifactory was not shutdown properly. [/opt/jfrog/artifactory/data/.lock]
+2018-12-04 18:28:59,188 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:495) - Artifactory application context set to NOT READY by refresh
+2018-12-04 18:28:59,264 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:236) - Refreshing artifactory: startup date [Tue Dec 04 18:28:59 UTC 2018]; root of context hierarchy
