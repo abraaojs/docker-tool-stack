@@ -6,7 +6,7 @@ networks:
 volumes:
   elasticsearch:
     driver: local
-
+    
 services:
   elasticsearch:
     environment:
