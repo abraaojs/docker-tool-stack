@@ -20,6 +20,7 @@ services:
     - 9200:9200
     volumes:
     - "$PWD/elasticsearch:/usr/share/elasticsearch/data:rw"
+    - "$PWD/elasticsearch:/usr/share/elasticsearch/config:rw"
 
   logstash:
     image: docker.elastic.co/logstash/logstash-oss:6.2.1
