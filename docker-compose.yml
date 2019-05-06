@@ -3,7 +3,7 @@
 version: '3'
 services:
   docker-jenkins-tools: # JENKINS LATEST
-    image: jenkins:latest
+    image: jenkins/jenkins:lts
     container_name: jenkins
     restart: always
     ports:
